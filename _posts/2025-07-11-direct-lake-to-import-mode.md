@@ -7,6 +7,9 @@ tags: [microsoft, fabric, powerbi, powershell]
 ---
 Sometimes you have created a Direct Lake model on Microsoft Fabric which is already pretty detailed with lots of tables and relationships. You have also maybe already built reports on top of this Direct Lake model. Instead of manually recreating the semantic model in Import mode and rebinding the reports to the new model you can do it (semi-)programmatically.
 
+FYI, full code can be found in [this GitHub gist](https://gist.github.com/ThibauldC/f22907ca6da5939f7af7050ec1511c5b).
+
+
 ## Fabric Semantic Model storage modes
 Before diving in, let’s briefly look at the storage modes available in Microsoft Fabric semantic models:
 - Import
@@ -106,4 +109,4 @@ foreach ($report in $reports.value) {
 ```
 
 ## Wrapping up
-With a bit of scripting and the right tools (Tabular Editor, PowerShell, and Power BI API), you can automate the process of converting a Direct Lake model to Import mode and rebind reports to the new dataset—saving you tons of manual effort. Full code can be found in [this GitHub gist](https://gist.github.com/ThibauldC/f22907ca6da5939f7af7050ec1511c5b).
+With a bit of scripting and the right tools (Tabular Editor, PowerShell, and Power BI API), you can automate the process of converting a Direct Lake model to Import mode and rebind reports to the new dataset—saving you tons of manual effort.
